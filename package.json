@@ -1,0 +1,30 @@
+{
+  "name": "is-couch",
+  "version": "0.1.0",
+  "description": "Check if couchdb is running",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:charliedowler/is-couch.git"
+  },
+  "keywords": [
+    "database",
+    "couchdb"
+  ],
+  "dependencies": {
+    "q": "~1.0.1",
+    "log-symbols": "~1.0.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.2",
+    "grunt-simple-mocha": "^0.4.0"
+  },
+  "author": "charliedowler",
+  "license": "MIT",
+  "bin": {
+    "is-mysql": "./bin/is-couch"
+  }
+}
