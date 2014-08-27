@@ -6,7 +6,7 @@ module.exports = function (callback) {
   exec('couchdb', function (err, stdout, stderr) {
     var result = {
       type: 'couchdb',
-      running: (err) ? false : true
+      running: (err || !/is running/i.test(stdout)) ? false : true
     };
     if (callback) callback(result);
     deferred.resolve(result);
