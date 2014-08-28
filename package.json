@@ -25,6 +25,6 @@
   "author": "charliedowler",
   "license": "MIT",
   "bin": {
-    "is-mysql": "./bin/is-couch"
+    "is-couch": "./bin/is-couch"
   }
 }
