@@ -1,17 +1,17 @@
 'use strict';
 var assert = require('assert');
 var exec = require('child_process').exec;
-var isMysql = require('../index');
+var isCouch = require('../index');
 
 it('Should recognise couchdb is running - promise', function(done) {
-  isMysql().then(function(db) {
+  isCouch().then(function(db) {
     assert.equal(db.running, true);
     assert.equal(db.type, 'couchdb');
     done();
   });
 });
 it('Should recognise couchdb is running - callback', function(done) {
-  isMysql(function(db) {
+  isCouch(function(db) {
     assert.equal(db.running, true);
     assert.equal(db.type, 'couchdb');
     done();
